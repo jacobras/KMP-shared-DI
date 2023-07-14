@@ -1,10 +1,12 @@
 package com.example
 
+import android.content.Context
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import org.koin.core.context.loadKoinModules
+import org.koin.android.ext.koin.androidContext
+import org.koin.core.context.startKoin
 import org.koin.java.KoinJavaComponent.get
 
 @Module
@@ -17,8 +19,11 @@ class SharedModule {
     }
 
     companion object {
-        fun init() {
-            loadKoinModules(sharedModule)
+        fun init(context: Context) {
+            startKoin {
+                androidContext(context)
+                modules(sharedModule)
+            }
         }
     }
 }

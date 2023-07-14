@@ -18,6 +18,8 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
+                implementation("io.insert-koin:koin-android:3.2.0")
+
                 implementation("com.google.dagger:hilt-android:2.46.1")
                 configurations.getByName("kapt").dependencies.add(
                     org.gradle.api.internal.artifacts.dependencies.DefaultExternalModuleDependency(
