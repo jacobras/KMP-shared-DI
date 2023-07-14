@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" modified="2023-07-14T12:42:42.833Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.79" etag="J-G_DlQvemQxEP7rOLMg" version="21.2.3" type="device">
+  <diagram name="Page-1" id="wKJebOKrnrgbRVof3aQE">
+    <mxGraphModel dx="2074" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="I7mu66cCPgJdqowpahpK-2" value="Shared library" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="310" width="360" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-1" value="commonMain" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="I7mu66cCPgJdqowpahpK-2">
+          <mxGeometry x="120" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="I7mu66cCPgJdqowpahpK-2" source="I7mu66cCPgJdqowpahpK-12" target="I7mu66cCPgJdqowpahpK-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-12" value="androidMain" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="I7mu66cCPgJdqowpahpK-2">
+          <mxGeometry x="20" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-13" value="Hilt" style="ellipse;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="I7mu66cCPgJdqowpahpK-2">
+          <mxGeometry x="80" y="180" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-14" value="Koin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="I7mu66cCPgJdqowpahpK-2">
+          <mxGeometry x="200" y="85" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-20" value="Exposes Koin dependencies through Hilt" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="I7mu66cCPgJdqowpahpK-2">
+          <mxGeometry x="160" y="151" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I7mu66cCPgJdqowpahpK-3" target="I7mu66cCPgJdqowpahpK-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-3" value="Android app" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="60" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-5" value="androidMain" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="I7mu66cCPgJdqowpahpK-3">
+          <mxGeometry x="40" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-7" value="Hilt" style="ellipse;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="I7mu66cCPgJdqowpahpK-3">
+          <mxGeometry x="100" y="90" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I7mu66cCPgJdqowpahpK-4" target="I7mu66cCPgJdqowpahpK-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-4" value="Desktop app" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="60" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-6" value="jvmMain" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="I7mu66cCPgJdqowpahpK-4">
+          <mxGeometry x="40" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-11" value="Koin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="I7mu66cCPgJdqowpahpK-4">
+          <mxGeometry x="110" y="90" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="I7mu66cCPgJdqowpahpK-19" value="Does NOT depend on Koin, only Hilt" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="130" width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
