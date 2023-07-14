@@ -7,6 +7,14 @@ kotlin {
     android()
     jvm()
     jvmToolchain(17)
+
+    sourceSets {
+        val commonMain by getting {
+            dependencies {
+                implementation("io.insert-koin:koin-core:3.2.0")
+            }
+        }
+    }
 }
 
 android {
