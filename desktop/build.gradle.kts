@@ -3,7 +3,7 @@ plugins {
 }
 
 kotlin {
-    jvm()
+    jvm { withJava() }
 
     sourceSets {
         val commonMain by getting {
