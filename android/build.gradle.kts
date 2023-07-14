@@ -20,6 +20,12 @@ kotlin {
                         "2.46.1"
                     )
                 )
+                implementation("io.insert-koin:koin-android:3.2.0")
+
+                // Specify Lifecycle dependency manually to fix a dependency resolution issue
+                implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+
+                implementation(project(":shared"))
             }
         }
     }
