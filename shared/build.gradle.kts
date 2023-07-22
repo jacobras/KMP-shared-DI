@@ -10,6 +10,17 @@ kotlin {
     jvm()
     jvmToolchain(17)
 
+    ios()
+    listOf(
+        iosX64(),
+        iosArm64(),
+        iosSimulatorArm64()
+    ).forEach {
+        it.binaries.framework {
+            baseName = "shared"
+        }
+    }
+
     sourceSets {
         val commonMain by getting {
             dependencies {
@@ -30,6 +41,7 @@ kotlin {
                 )
             }
         }
+        val iosMain by getting
     }
 }
 
