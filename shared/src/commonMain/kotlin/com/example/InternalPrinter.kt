@@ -1,6 +1,6 @@
 package com.example
 
-class InternalSharedPrinter {
+internal class InternalPrinter {
     fun print(): String {
         return "Internal printer."
     }

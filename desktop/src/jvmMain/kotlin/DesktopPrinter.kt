@@ -1,6 +1,6 @@
 import com.example.SharedPrinter
 
-class DesktopPrinter(
+internal class DesktopPrinter(
     private val sharedPrinter: SharedPrinter
 ) {
     fun print(): String {

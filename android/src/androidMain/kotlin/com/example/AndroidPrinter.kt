@@ -4,7 +4,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class AndroidPrinter @Inject constructor(
+internal class AndroidPrinter @Inject constructor(
     private val sharedPrinter: SharedPrinter
 ) {
     fun print(): String {
