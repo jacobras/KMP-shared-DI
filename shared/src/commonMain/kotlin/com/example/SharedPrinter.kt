@@ -3,8 +3,10 @@ package com.example
 /**
  * This will be shared and also injectable.
  */
-class SharedPrinter {
+class SharedPrinter(
+    private val internalSharedDependency: InternalSharedPrinter
+) {
     fun print(): String {
-        return "Hello world"
+        return "Shared printer.  ${internalSharedDependency.print()}"
     }
 }

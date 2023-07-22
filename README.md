@@ -8,3 +8,11 @@ depend on the DI framework the shared code is using.
 ## Architecture
 
 ![Architectural overview showing Android and Desktop depending on the :shared module](docs/images/overview.png)
+
+### Running the app
+
+#### Android
+`gradlew android:installDebug`
+
+#### Desktop
+Click the ▶️ icon next to `fun main()` in `desktop/src/jvmMain/kotlin/Main.kt`.
