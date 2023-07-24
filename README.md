@@ -9,6 +9,8 @@ The same goes for the [ios] sample, albeit a bit differently setup: the shared d
 exposed through a `KoinComponent` in the `iosMain` source set, and the iOS app accesses those to
 put them into the Swinject container.
 
+This repository accompanies this article: https://medium.com/@jacobras/multiplatform-dependency-injection-making-koin-dagger-hilt-and-swinject-work-together-on-android-e17b98bd8f7b
+
 ## Architecture
 
 ![Architectural overview showing Android and Desktop depending on the :shared module](docs/images/overview.svg)
