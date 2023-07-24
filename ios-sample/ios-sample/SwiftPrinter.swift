@@ -10,11 +10,11 @@ import shared
 
 class SwiftPrinter {
     private let sharedPrinter: SharedPrinter
-    
+
     init(printer: SharedPrinter) {
         sharedPrinter = printer
     }
-    
+
     func print() -> String {
         return "Swift printer. " + sharedPrinter.print()
     }

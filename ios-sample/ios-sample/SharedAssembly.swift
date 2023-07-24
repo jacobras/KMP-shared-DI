@@ -9,10 +9,10 @@ import Foundation
 import Swinject
 import shared
 
-final class SharedAssembly : Assembly {
+final class SharedAssembly: Assembly {
     private let sharedDi = SharedDi()
-    
+
     func assemble(container: Swinject.Container) {
-        container.register(SharedPrinter.self) { _ in  self.sharedDi.sharedPrinter()}
+        container.register(SharedPrinter.self) { _ in self.sharedDi.sharedPrinter() }
     }
 }
