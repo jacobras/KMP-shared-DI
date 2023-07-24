@@ -11,7 +11,7 @@ put them into the Swinject container.
 
 ## Architecture
 
-![Architectural overview showing Android and Desktop depending on the :shared module](docs/images/overview.png)
+![Architectural overview showing Android and Desktop depending on the :shared module](docs/images/overview.svg)
 
 ### Running the app
 
